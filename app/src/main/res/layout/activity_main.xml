@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.tree.max.humidifier.MainActivity">
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_marginLeft="10dp"
+            android:id="@+id/connectButton"
+            android:text="连接仪器"
+            android:textColor="#fff"
+            android:shadowColor="#0a0909"
+            android:background="@drawable/circle_pink"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+        <Button
+            android:layout_marginLeft="20dp"
+            android:id="@+id/autoButton"
+            android:text="自动"
+            android:layout_marginRight="20dp"
+            android:textColor="#fff"
+            android:shadowColor="#0a0909"
+            android:background="@drawable/circle_gray"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+        <Button
+            android:layout_marginRight="10dp"
+            android:id="@+id/handButton"
+            android:text="手动"
+            android:shadowColor="#0a0909"
+            android:shadowRadius="100"
+            android:textColor="#fff"
+            android:background="@drawable/circle_blue"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+        <ToggleButton
+            android:id="@+id/stateButton"
+            android:background="@drawable/circle_angle"
+            android:textOn="打开"
+            android:textOff="关闭"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginLeft="20dp"
+        android:gravity="bottom"
+        android:id="@+id/aim_humidifier"
+        android:text="设定湿度:60"
+        android:textColor="#9286ff"
+        android:textSize="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="35dp" />
+    <TextView
+        android:layout_marginLeft="20dp"
+        android:gravity="bottom"
+        android:id="@+id/current_humidifier"
+        android:text="当前湿度:"
+        android:textColor="#9286ff"
+        android:textSize="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="35dp" />
+
+    <com.idtk.smallchart.chart.LineChart
+        android:id="@+id/times_data_view"
+
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" />
+
+</LinearLayout>
